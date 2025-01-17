@@ -1,0 +1,27 @@
+expname = pitcher_base
+basedir = ./logs_hill_near_new_vel_complete_seq_gt_pose_train_schedule/static_lat_200_2D_decoder_3layers_lips_prod_wt_1e-22_node_lr_1e-3_decay_0.999_on_cur_lr_render
+
+datadir = /hdd2/hiran/NeRF/DyNeRF_ball_roll_diff_start_points_complete_seq_hill_near_new_static_frame
+dataset_type = blender
+
+nerf_type = direct_temporal
+no_batching = True
+not_zero_canonical = False
+use_viewdirs = True
+
+use_viewdirs = True
+white_bkgd = False
+lrate_decay = 500
+
+N_iter = 300000
+N_samples = 64
+N_importance = 128
+N_rand = 500
+testskip = 1
+
+precrop_iters = 500
+precrop_iters_time = 10000
+precrop_frac = 0.5
+
+half_res = True
+do_half_precision = False
